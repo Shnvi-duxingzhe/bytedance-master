@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字节跳动</title>
+    <style>
+      
+    </style>
+    <link rel="stylesheet" href="./resource/css/header-footer.css">
+    <link rel="stylesheet" href="./resource/css/index-main.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.box {
+    width: 1520px;
+    height: 600px;
+    overflow: hidden;
+    margin: 90px auto;
+    position: relative;
+}
+
+img {
+    width: 1520px;
+    height: 600px;
+    vertical-align: top;
+    /*取消底边的3px */
+}
+
+
+.btn span{
+     width: 60px;
+    height: 100px;
+    background: #4a4a4a;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.btn span:hover{
+    opacity: 1;
+    color: #fff;
+}
+
+.btn .left{
+    left: 0;
+    top: 125px;
+}
+
+.btn .right{
+    right: 0;
+    top: 125px;
+}
+
+
+
+html,body,ul,p{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        img{
+            display: block;
+            border: none;
+        }
+        #slide{
+            width: 420px;
+            height: 700px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        #slide>ul{
+            width: 500%;
+            overflow: hidden;
+            animation: dh 10s infinite;/*定义了一个叫做dh的关键动画帧,持续时间10s*/
+        }
+        #slide>ul li{
+            width: 20%;
+            float: left;
+            position: relative;
+
+        }
+        #slide>ul li p{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            width: 100%;/*占满整个盒子的宽度*/
+            line-height: 50px;
+            background-color: rgb(73,73,73,0.7);
+            color: cornsilk;
+            text-align: center;
+        }
+        @keyframes dh{
+            10%{margin-left: 0;}
+            20%{margin-left: -100%;}
+            30%{margin-left: -100%;}
+            40%{margin-left: -200%;}
+            50%{margin-left: -200%;}
+            60%{margin-left: -300%;}
+            70%{margin-left: -300%;}
+            80%{margin-left: -400%;}
+            90%{margin-left: -400%;}
+            100%{margin-left: 0;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-ellipse-full-wrapper" style="margin-top: 600px;height: 3500px;">
+        <div class="bg-ellipse-wrapper">
+          <div class="bg-ellipse bg-ellipse-1" style="transform: translate3d(0px, 7px, 0px);"></div>
+          <div class="bg-ellipse bg-ellipse-2" style="transform: translate3d(0px, 10.5px, 0px);"></div>
+          <div class="bg-ellipse bg-ellipse-3" style="transform: translate3d(0px, 3.5px, 0px);"></div>
+          <div class="bg-ellipse bg-ellipse-4" style="transform: translate3d(0px, 7px, 0px);"></div>
+          <div class="bg-ellipse bg-ellipse-5" style="transform: translate3d(0px, 10.5px, 0px);"></div>
+          <div class="bg-ellipse bg-ellipse-6" style="transform: translate3d(0px, 3.5px, 0px);"></div>
+        </div>
+    </div>
+    <!-- 页头 -->
+    <div id="header" class="header-navigation">
+        <div class="nav">
+            <a href="#" class="logo">
+                <img src="./resource/images/header/bytedance_logo.png" style="width: 45%;height: 45%;margin-top: 15px;" alt="bytedance">
+            </a>
+            <div id="nav-btn" class="btn">
+                <img src="./resource/images/header/menu.png" style="margin-top: 5px;margin-bottom: 5px; width: 40px;height:40px;" />
+            </div>
+            <ul class="nav-bar">
+                <li><a href="./index.html">关于我们</a></li>
+                <li><a href="./pages/products.html">我们的产品</a></li>
+                <li><a href="./pages/news.html">新闻动态</a></li>
+                <li><a href="./pages/corporate.html">企业社会责任</a></li>
+                <li><a href="#">加入我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+<div class="box" id="box">
+    <ul id="inner-box" style="width: 1000%;height: 600px;list-style: none;position: absolute;left: 0;top: 0;">
+        <li style="float: left;"><img src="./resource/images/banner/banner1.jpg"></li>
+        <li style="float: left;"><img src="./resource/images/banner/banner2.jpg"></li>
+        <li style="float: left;"><img src="./resource/images/banner/banner3.jpg"></li>
+        <li style="float: left;"><img src="./resource/images/banner/banner4.jpg"></li>
+        <li style="float: left;"><img src="./resource/images/banner/banner1.jpg"></li>
+    </ul>
+    <ol id="ol" style="margin-left: 180px; position: absolute;bottom: 20px;left: 40%;list-style: none;">
+        <li style="width: 10px;height: 10px;border-radius: 10px;border: 1px solid #fff;float: left;margin: 0 4px;"></li>
+        <li style="width: 10px;height: 10px;border-radius: 10px;border: 1px solid #fff;float: left;margin: 0 4px;"></li>
+        <li style="width: 10px;height: 10px;border-radius: 10px;border: 1px solid #fff;float: left;margin: 0 4px;"></li>
+        <li style="width: 10px;height: 10px;border-radius: 10px;border: 1px solid #fff;float: left;margin: 0 4px;"></li>
+    </ol>
+    <div class="btn">
+        <span class="left" id="left"><</span>
+        <span class="right" id="right">></span>
+    </div>
+</div>
+    <div style="height: 800px;width: 1150px;margin-top: 0%;float:left;margin-left: 15%;margin-right: 15%;">
+        <div style="width: 25%;float: left;">
+            <h1 style="text-align: center;margin-top: 60px;">企业文化</h1>
+            <p style="text-align: center;">字节范是字节跳动企业文化的重要组成部分，是我们共同认为可行的行为标准</p>
+        </div>
+        <div>
+            <div id="slide" style="width: 65%;float: right;border-radius:50px;background-color: white;">
+                <ul>
+                    <li>
+                        <a href="" style="">
+                            <img src="./resource/images/small-banner/1 (1).jpg" alt="" style="height: 400px;width: 750px;">
+                            <div style="float:left;color: black;list-style:none;list-style: non;height: 300px;width: 400px;margin-top: 30px;">
+                                <h1>追求极致</h1>
+                                <ul style="width: 1000px;list-style-type: disc;float: left;margin-left: 25px;">
+                                    <li>不断提高要求，延迟满足感</li><br>
+                                    <li>在更大范围里找最优解</li><br>
+                                    <li>不放过问题，思考本质</li><br>
+                                    <li>持续学习和成长</li>
+                                </ul>
+                            </div>
+                        
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./resource/images/small-banner/1 (2).jpg" alt="" style="height: 400px;width: 750px;">
+                            <div style="float:left;color: black;list-style:none;list-style: non;height: 300px;width: 400px;margin-top: 30px;">
+                                <h1>追求极致</h1>
+                                <ul style="width: 1000px;list-style-type: disc;float: left;margin-left: 25px;">
+                                    <li>不断提高要求，延迟满足感</li><br>
+                                    <li>在更大范围里找最优解</li><br>
+                                    <li>不放过问题，思考本质</li><br>
+                                    <li>持续学习和成长</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./resource/images/small-banner/1 (3).jpg" alt="" style="height: 400px;width: 750px;">
+                            <div style="float:left;color: black;list-style:none;list-style: non;height: 300px;width: 400px;margin-top: 30px;">
+                                <h1>追求极致</h1>
+                                <ul style="width: 1000px;list-style-type: disc;float: left;margin-left: 25px;">
+                                    <li>不断提高要求，延迟满足感</li><br>
+                                    <li>在更大范围里找最优解</li><br>
+                                    <li>不放过问题，思考本质</li><br>
+                                    <li>持续学习和成长</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./resource/images/small-banner/1 (4).jpg" alt="" style="height: 400px;width: 750px;">
+                            <div style="float:left;color: black;list-style:none;list-style: non;height: 300px;width: 400px;margin-top: 30px;">
+                                <h1>追求极致</h1>
+                                <ul style="width: 1000px;list-style-type: disc;float: left;margin-left: 25px;">
+                                    <li>不断提高要求，延迟满足感</li><br>
+                                    <li>在更大范围里找最优解</li><br>
+                                    <li>不放过问题，思考本质</li><br>
+                                    <li>持续学习和成长</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./resource/images/small-banner/1 (1).jpg" alt="" style="height: 400px;width: 750px;">
+                            <div style="float:left;color: black;list-style:none;list-style: non;height: 300px;width: 400px;margin-top: 30px;">
+                                <h1>追求极致</h1>
+                                <ul style="width: 1000px;list-style-type: disc;float: left;margin-left: 25px;">
+                                    <li>不断提高要求，延迟满足感</li><br>
+                                    <li>在更大范围里找最优解</li><br>
+                                    <li>不放过问题，思考本质</li><br>
+                                    <li>持续学习和成长</li>
+                                </ul>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<<div style="height: 500px;width: 1000px;margin-top: 0%;float:left;margin-left: 15%;margin-right: 15%;">
+    
+    <div>
+        <div id="slide" style="width: 65%;float: left;">
+            <img src="./resource/images/index-img/index (1).jpeg" style="height: 350px;width: 600px;">
+        </div>
+    </div>
+    <div style="width: 25%;float: right;">
+        <h1 style="text-align: center;margin-top: 60px;">企业文化</h1>
+        <p style="text-align: center;">字节跳动致力于成为全球创作与交流平台，让几十亿人的数字生活更美好、更有效率、更有趣。我们相信，高道德标准和诚信文化在实现这一愿景方面发挥着关键作用。因此，我们制定了字节跳动行为准则 和字节跳动合作伙伴行为准则。</p>
+    </div>
+</div>
+
+
+
+<!-- 大事记 -->
+<div class="dsj">
+    <!-- 版心 -->
+    <div class="container">
+        <!-- 标题 -->
+        <h3>大事记</h3>
+        <!-- 内容 -->
+        <div class="dsj-content" style="border-collapse:collapse;border-spacing:0;margin-top: 400px;">
+            <!-- 片段 -->
+            
+                
+                    <div class="dsj-section">
+                        <div class="dsj-sectionone" style="border-collapse:collapse;border-spacing:0">
+                            <img src="./resource/images/index-img/lbt-dsj/dsj-1.png" alt=""style="float: left;">
+
+                            
+                            <div class="words" style="float: right;width: 252px;height: 209px;margin: 23px 26px 0px 45px;">
+                                <h4>2019年1月</h4>
+                                <p>字节跳动发布商业品牌巨量引擎</p>
+                            </div>
+                        </div>
+                    </div>
+                
+
+            
+        </div>
+        <div class="hx">
+            <a href="" style="float: left;"><img src="./resource/images/index-img/lbt-dsj/dsj-logo1.png" alt="" class="iimg"></a>
+            <a href="" style="float: left;"><img src="./resource/images/index-img/lbt-dsj/dsj-logo2.png" alt="" class="iimg"></a>
+            <a href="" style="float: left;"><img src="./resource/images/index-img/lbt-dsj/dsj-logo3.png" alt="" class="iimg"></a>
+            <a href="" style="float: left;"><img src="./resource/images/index-img/lbt-dsj/dsj-logo4.png" alt="" class="iimg"></a>
+            <a href="" style="float: left;"><img src="./resource/images/index-img/lbt-dsj/dsj-logo5.png" alt="" class="iimg"></a>
+        </div>
+        <li class="black"></li>
+    </div>
+</div>
+<div style="height: 100px;"></div>
+<div class="dsj">
+    <!-- 版心 -->
+    <div class="container">
+        <!-- 标题 -->
+        <h3>联系我们</h3>
+        <!-- 内容 -->
+        <div style="float: left;width: 50%;height: 250px;">
+            <h4 style="font-size: 30px;">媒体咨询</h4>
+            <p style="font-size: 20px;color: blue;">gongguan@bytedance.com</p>
+        </div>
+        <div style="float: left;width: 50%;height: 250px;">
+            <h4 style="font-size: 30px;">媒体咨询</h4>
+            <p style="font-size: 20px;color: blue;">gongguan@bytedance.com</p>
+        </div>
+        <div style="float: left;width: 50%;height: 250px;">
+            <h4 style="font-size: 30px;">媒体咨询</h4>
+            <p style="font-size: 20px;color: blue;">gongguan@bytedance.com</p>
+        </div>
+        <div style="float: left;width: 50%;height: 250px;">
+            <h4 style="font-size: 30px;">媒体咨询</h4>
+            <p style="font-size: 20px;color: blue;">gongguan@bytedance.com</p>
+        </div>
+        <div style="float: left;width: 50%;height: 250px;">
+            <h4 style="font-size: 30px;">媒体咨询</h4>
+            <p style="font-size: 20px;color: blue;">gongguan@bytedance.com</p>
+        </div>
+    </div>
+</div>
+
+<div style="height: 300px;"></div>
+
+
+
+
+     
+
+
+  
+       
+
+
+
+
+
+    <!-- 页脚 -->
+    <footer>       
+        <div class="container-footer-all">         
+             <div class="container-body">
+                 <div class="colum1">
+                    <img src="./resource/images/header/bytedance_logo.png" style="width: 200px;height: 60px;margin-top: 15px;" alt="bytedance"> 
+                 </div> 
+                <div class="colum2">
+                    <h1>关于我们</h1>
+                    <div class="row">
+                        <a href="#">企业文化</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">行为准则</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">大事记</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">我们的产品</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">联系我们</a>
+                    </div>
+                </div>
+                <div class="colum2">
+                    <h1>新闻动态</h1>
+                    <div class="row">
+                        <a href="#">公司新闻</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">数据报告</a>
+                    </div>
+                </div>
+                <div class="colum2" style="padding-right:50px;">
+                    <h1>企业社会责任</h1>
+                    <div class="row">
+                        <a href="#">企业社会责任报告</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">优质内容创造社会价值</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">信息助力公益新思路</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">可持续发展的经营与管理</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">维护健康的网络生态平台</a>
+                    </div>
+                </div>
+                <div class="colum2">
+                    <h1>加入我们</h1>
+                    <div class="row">
+                        <a href="#">招聘官网</a>
+                    </div>
+                </div>
+             </div>
+         </div>        
+         <div class="container-footer">
+                <div class="footer">
+                     <div class="copyright">
+                         © 2017 Todos los Derechos Reservados | <a href="">Magtimus</a>
+                     </div>
+ 
+                     <div class="information">
+                         <a href="#" style="text-align:right;">
+                            © 2012-2021 字节跳动<br/>
+                            京公网安备 11000002002068号京ICP备12025439号-7
+                         </a>
+                     </div>
+                 </div> 
+             </div>        
+     </footer>
+    
+</body>
+
+
+<script src="./resource/js/main.banner.js"></script>
+<script src="./resource/js/index.main.js"></script>
+
+
+
+
+</html>

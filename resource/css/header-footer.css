@@ -1,0 +1,279 @@
+/* header  */
+* {
+    padding:0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+#header {
+    background-color: #3c8cff;
+    padding: 10px 10%;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+}
+
+#header a:hover {
+    color: #DDD;
+}
+/* 导航栏按钮 */
+.btn {
+    display: none;
+    float:right;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+/* 文字Logo */
+#header a.logo {
+    float:left;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 80px;
+    width: 30%;
+}
+
+#header div.nav {
+    height: 80px;
+}
+
+#header ul.nav-bar {
+    list-style: none;
+    float: right;
+    line-height: 80px;
+}
+#header ul.nav-bar li {
+    float:left;
+    padding: 0 35px;
+}
+
+@media screen and (max-width: 768px){
+    #header {
+        padding: 10px 5%;
+        height: 50px;
+        overflow: hidden;
+    }
+    #header a.logo {
+        line-height: 55px;
+        font-size: 30px;
+    }
+    .btn {
+        display: block;
+    }
+    #header ul.nav-bar {
+        margin-top: 15px;
+        border-top: solid 1px #111;
+        width:100%;
+    }
+    #header ul.nav-bar li {
+        float: none;
+        padding: 0 10px;
+    }
+}
+
+#container {
+    width: 100%;
+    height: 900px;
+    background:#FFBBBB;
+}
+.jq22-container {
+	margin:0 auto;
+}
+/* Header */
+.jq22-header {
+	padding:1em 190px 1em;
+	letter-spacing:-1px;
+	text-align:center;
+}
+
+.header-navigation {
+	position:fixed;
+	top:0;
+	width:100%;
+	/* height:60px; */
+	line-height:60px;
+	background-color:#333;
+	text-align:center;
+	box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+	z-index:9999;
+}
+.link {
+	color:#fff;
+	text-decoration:none;
+	margin:0 30px;
+}
+
+/* Slide transitions */
+
+	.slideUp {
+	/* -webkit-transform:translateY(-100px);
+	transform:translateY(-100px);
+	*/
+	  -webkit-transform:translateY(-100px);
+	-ms-transform:translateY(-100px);
+	-o-transform:translateY(-100px);
+	transform:translateY(-100px);
+	/*transition:transform .5s ease-out;
+	*/
+	  -webkit-transition:transform .5s ease-out;
+	-o-transition:transform .5s ease-out;
+	transition:transform .5s ease-out;
+}
+.slideDown {
+	/*-webkit-transform:translateY(0);
+	transform:translateY(0);
+	*/
+	  -webkit-transform:translateY(0);
+	-ms-transform:translateY(0);
+	-o-transform:translateY(0);
+	transform:translateY(0);
+	/*transition:transform .5s ease-out;
+	*/
+	  -webkit-transition:transform .5s ease-out;
+	-o-transition:transform .5s ease-out;
+	transition:transform .5s ease-out;
+}
+
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer{
+    width: 100%;
+    background: #3c8cff;
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 300px;
+    float: left;
+    padding-right: 250px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    width:800px;
+    float:right;
+}
+
+.colum2 h1{
+    font-size: 18px;
+}
+.colum2 a{
+    font-size: 15px;
+    color: white;
+    text-decoration:none;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #3c8cff;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}

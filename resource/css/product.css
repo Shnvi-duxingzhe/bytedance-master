@@ -1,0 +1,170 @@
+body{
+    position: relative;
+}
+.main{
+    width: 100%;
+    height: 840px;
+}
+/* 顶部导航 */
+.header {
+  /* position: relative; */
+  width: 100%;
+  height: 101px;
+  background-color: #3c8cff;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo {
+  line-height: 138px;
+  width: 250px;
+  height: 43px;
+}
+
+.logo img {
+  display: inline-block;
+  width: 166px;
+  margin-left: 144px;
+  height: 43px;
+}
+
+.header-right {
+  width: 675px;
+  height: 21px;
+  margin-right: 103px;
+  float: right;
+}
+
+.header-right div {
+  width: 64px;
+  height: 21px;
+  margin: 0 29px;
+  line-height: 101px;
+  float: left;
+}
+
+.header-right div:nth-child(2) {
+  width: 80px;
+}
+
+.header-right div:nth-child(4) {
+  width: 96px;
+}
+
+.header-right a:hover {
+  color: rgb(108, 213, 227);
+}
+
+.header-right a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: #ffffff;
+}
+/* 侧边栏 */
+.cbl{
+    position: fixed;
+    z-index: 100;
+    top: 100px;
+    right: 100px;
+    width: 50px;
+    height: 635px;
+    text-align: center;
+    overflow: hidden;
+}
+.cbl a{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    padding-top:21px;
+    overflow: hidden;
+}
+.cbl img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s;
+} 
+.cbl img:hover{
+    transform: scale(1.5);
+}
+.active{
+    transform: scale(1.5);
+}
+/* 可视窗口 */
+.main1{
+   /* 为了让ul进行移动的 */
+   position: absolute;
+   top: 0;
+   height: calc(840px*11);
+   width: 100%;
+}
+.main2{
+    position: relative;
+    width: 100%;
+    height: 840px;
+    overflow: hidden;
+}
+/* 屏幕样式 */
+#section{
+    width: 100%;
+    height: 840px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+/* 背景图 */
+.section1{
+    background-image: url("../images/products/swip/product-1.png");
+}
+
+/* 左边栏 */
+.item1-left{
+    width: 310px;
+    height: 520px;
+    margin-left: 111px;
+
+}
+.llogo{
+    width: 310px;
+    height: 150px;
+    float: left;
+}
+/* 图片logo大小 */
+#section img{
+    width: 90px;
+    height: 90px;
+}
+/* 标题 */
+.title{
+    width: 310px;
+    height: 32px;
+    font-size: 28px;
+    color: #333333;
+    margin-top: 32px;
+    font-weight: 700;
+}
+/* 文字 */
+.desc{
+    float: left;
+    width: 310px;
+    height: 345px;
+    color: #333333;
+    font-size: 17px;
+    margin-top: 24px;
+    line-height: 1.8;
+}
+/* 网址 */
+.desc a{
+    color: #3c8cff;
+}
+/* 文字1 */
+.main span{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
